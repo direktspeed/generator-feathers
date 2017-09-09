@@ -129,6 +129,7 @@ module.exports = class ConnectionGenerator extends Generator {
         message: 'Which database are you connecting to?',
         default: 'nedb',
         choices: [
+          { name: 'Couchbase', value: 'couchbase' },
           { name: 'MariaDB', value: 'mariadb' },
           { name: 'Memory', value: 'memory' },
           { name: 'MongoDB', value: 'mongodb' },
